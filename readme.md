@@ -5,7 +5,6 @@ An interactive archive-style portfolio built with HTML, CSS, and JavaScript.
 Currently a work in progress.
 
 ## Features
-
 - Folder-based UI
 - Interactive sticky notes
 - Terminal-inspired interactions
@@ -13,7 +12,6 @@ Currently a work in progress.
 - Custom themes
 
 ## Planned Features
-
 - Responsive redesign
 - Real terminal commands
 - Hidden easter eggs
@@ -21,9 +19,7 @@ Currently a work in progress.
 - Sound design
 
 ## Live Site
-
-Coming soon.
-
+Work in Progress
 ---
 
-Built and designed by Amishi.
+Built and designed by Amishi with ❤️.
