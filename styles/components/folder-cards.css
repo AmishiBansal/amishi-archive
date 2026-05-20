@@ -1,0 +1,49 @@
+.folder-grid {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+  gap: 1rem;
+}
+
+.folder-card {
+  position: relative;
+
+  background: var(--card-color);
+
+  border-radius: var(--radius-medium);
+
+  padding: 1.2rem;
+
+  min-height: 170px;
+
+  cursor: pointer;
+
+  transition:
+    transform var(--transition-medium),
+    box-shadow var(--transition-medium);
+
+  box-shadow: var(--shadow-medium);
+
+  animation: floatCard 5s ease-in-out infinite;
+}
+
+.folder-card:hover {
+  transform: translateY(-12px) scale(1.02);
+
+  box-shadow: var(--shadow-large);
+
+  z-index: 5;
+}
+
+.folder-paper {
+  position: absolute;
+
+  inset: 8px;
+
+  border-radius: 14px;
+
+  border: 1px solid rgba(0, 0, 0, 0.04);
+
+  pointer-events: none;
+}

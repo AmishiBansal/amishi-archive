@@ -1,0 +1,41 @@
+:root {
+  /* COLORS */
+  --bg-color: #d8c7ab;
+  --sidebar-color: #c9b18d;
+  --panel-color: #f5eddf;
+  --card-color: #efe0bc;
+  --paper-color: #fff7ea;
+
+  --text-color: #1f1f1f;
+  --muted-text: rgba(0, 0, 0, 0.6);
+
+  --accent-color: #7bb84f;
+  --accent-soft: #d8efc2;
+
+  --terminal-bg: #121212;
+  --terminal-text: #8cff8c;
+
+  --border-soft: rgba(0, 0, 0, 0.08);
+  --border-strong: rgba(0, 0, 0, 0.15);
+
+  /* SHADOWS */
+  --shadow-soft: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --shadow-medium: 0 10px 24px rgba(0, 0, 0, 0.12);
+  --shadow-large: 0 20px 45px rgba(0, 0, 0, 0.18);
+
+  /* TRANSITIONS */
+  --transition-fast: 0.2s ease;
+  --transition-medium: 0.35s ease;
+
+  /* Z INDEX */
+  --z-sidebar: 50;
+  --z-modal: 500;
+  --z-terminal: 700;
+  --z-notification: 900;
+  --z-secret: 1000;
+
+  /* RADIUS */
+  --radius-small: 12px;
+  --radius-medium: 18px;
+  --radius-large: 28px;
+}

@@ -1,0 +1,39 @@
+@media (max-width: 900px) {
+  .archive-layout {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    position: relative;
+
+    width: 100%;
+
+    padding: 1rem;
+
+    overflow-x: auto;
+  }
+
+  .main-board {
+    margin-left: 0;
+
+    width: 100%;
+
+    padding: 1.5rem;
+  }
+
+  .hero {
+    flex-direction: column;
+  }
+
+  .hero h1 {
+    font-size: 4rem;
+  }
+
+  .modal-content {
+    padding: 1.5rem;
+  }
+
+  .modal-body {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,74 @@
+.terminal-overlay {
+  position: fixed;
+
+  inset: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: rgba(0, 0, 0, 0.45);
+
+  backdrop-filter: blur(6px);
+
+  opacity: 0;
+
+  pointer-events: none;
+
+  transition: opacity var(--transition-medium);
+
+  z-index: var(--z-terminal);
+}
+
+.terminal-overlay.show {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.terminal-window {
+  width: 800px;
+
+  max-width: 90%;
+
+  background: var(--terminal-bg);
+
+  border-radius: 20px;
+
+  overflow: hidden;
+
+  transform: scale(0.9);
+
+  opacity: 0;
+
+  transition: all var(--transition-medium);
+
+  box-shadow: var(--shadow-large);
+}
+
+.terminal-window.show {
+  transform: scale(1);
+
+  opacity: 1;
+}
+
+.terminal-body {
+  padding: 2rem;
+
+  color: var(--terminal-text);
+
+  font-family: "IBM Plex Mono", monospace;
+}
+
+#terminal-input {
+  width: 100%;
+
+  background: transparent;
+
+  border: none;
+
+  outline: none;
+
+  color: var(--terminal-text);
+
+  font-family: "IBM Plex Mono", monospace;
+}

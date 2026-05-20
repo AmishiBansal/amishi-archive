@@ -1,0 +1,15 @@
+@import url("./base/reset.css");
+@import url("./base/variables.css");
+@import url("./base/animations.css");
+
+@import url("./layout/archive-layout.css");
+@import url("./layout/sidebar.css");
+
+@import url("./components/tabs.css");
+@import url("./components/folder-cards.css");
+@import url("./components/modals.css");
+@import url("./components/terminal.css");
+@import url("./components/notifications.css");
+@import url("./components/secret-file.css");
+
+@import url("./layout/responsive.css");

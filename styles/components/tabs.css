@@ -1,0 +1,68 @@
+.tab {
+  width: 145px;
+
+  min-height: 48px;
+
+  padding: 0.45rem 0.7rem;
+
+  border-radius: 0 12px 12px 0;
+
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+
+  font-family: "IBM Plex Mono", monospace;
+
+  font-size: 0.74rem;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  position: relative;
+
+  transition:
+    transform var(--transition-fast),
+    box-shadow var(--transition-fast);
+
+  box-shadow: var(--shadow-soft);
+
+  border: 1px solid var(--border-soft);
+}
+
+.tab:hover {
+  transform: translateX(4px);
+}
+
+.active-tab {
+  transform: translateX(10px) scale(1.02);
+  box-shadow: var(--shadow-large);
+}
+
+.green-tab {
+  background: #cfe8b4;
+}
+
+.cream-tab {
+  background: #f2e5c9;
+}
+
+.blue-tab {
+  background: #c9def4;
+}
+
+.peach-tab {
+  background: #f4c9b8;
+}
+
+.yellow-tab {
+  background: #f4dd8f;
+}
+
+.purple-tab {
+  background: #d8c9ef;
+}
+
+.pink-tab {
+  background: #efbfd0;
+}

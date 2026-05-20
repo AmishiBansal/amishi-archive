@@ -1,0 +1,41 @@
+@keyframes floatCard {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-4px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes pulseNode {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 226, 122, 0.6);
+  }
+
+  70% {
+    box-shadow: 0 0 0 18px rgba(255, 226, 122, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 226, 122, 0);
+  }
+}
+
+@keyframes pulseDot {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.4);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}

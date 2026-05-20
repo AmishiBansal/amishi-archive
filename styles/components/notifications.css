@@ -1,0 +1,45 @@
+.system-notification {
+  position: fixed;
+
+  top: 30px;
+  right: 30px;
+
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  padding: 1rem 1.4rem;
+
+  background: rgba(255, 255, 255, 0.72);
+
+  border-radius: 16px;
+
+  box-shadow: var(--shadow-medium);
+
+  backdrop-filter: blur(12px);
+
+  opacity: 0;
+
+  transform: translateY(-20px);
+
+  transition: all var(--transition-medium);
+
+  z-index: var(--z-notification);
+}
+
+.system-notification.show {
+  opacity: 1;
+
+  transform: translateY(0);
+}
+
+.notif-dot {
+  width: 10px;
+  height: 10px;
+
+  border-radius: 50%;
+
+  background: var(--accent-color);
+
+  animation: pulseDot 2s infinite;
+}

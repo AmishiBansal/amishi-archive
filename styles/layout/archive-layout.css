@@ -1,0 +1,11 @@
+.archive-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.main-board {
+  margin-left: 200px;
+  width: calc(100% - 200px);
+  padding: 3rem;
+  position: relative;
+}
