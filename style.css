@@ -720,6 +720,14 @@ section {
   font-size: 1.5rem;
 }
 
+.app-page {
+  display: none;
+}
+
+.app-page.active-page {
+  display: block;
+}
+
 
 /* LABEL */
 

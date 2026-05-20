@@ -2,482 +2,417 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Amishi Archive</title>
+    <title>Amishi's Archive</title>
 
     <!-- FONTS -->
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
-
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap"
         rel="stylesheet">
 
     <!-- CSS -->
-
     <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
 
-    <!-- ========================= -->
-    <!-- ARCHIVE LAYOUT -->
-    <!-- ========================= -->
-
+    <!-- Archive Layout -->
     <div class="archive-layout">
 
-
-        <!-- ========================= -->
-        <!-- SIDEBAR -->
-        <!-- ========================= -->
-
+        <!-- Sidebar -->
         <aside class="sidebar">
-
             <div class="sidebar-stack">
-
-                <div class="tab active-tab green-tab">
+                <div class="tab active-tab green-tab" data-page="archive-page">
                     <span>📁</span>
                     archive
                 </div>
 
-                <div class="tab cream-tab">
+                <div class="tab cream-tab" data-page="progress-page">
                     <span>📈</span>
                     progress
                 </div>
 
-                <div class="tab blue-tab">
+                <div class="tab blue-tab" data-page="projects-page">
                     <span>⌨️</span>
                     projects
                 </div>
 
-                <div class="tab peach-tab">
+                <div class="tab peach-tab" data-page="labs-page">
                     <span>💡</span>
                     labs
                 </div>
 
-                <div class="tab yellow-tab">
+                <div class="tab yellow-tab" data-page="achievements-page">
                     <span>⭐</span>
                     achievements
                 </div>
 
-                <div class="tab purple-tab">
+                <div class="tab purple-tab" data-page="about-page">
                     <span>👤</span>
                     about
                 </div>
 
-                <div class="tab pink-tab">
+                <div class="tab pink-tab" data-page="contact-page">
                     <span>✉️</span>
                     contact
                 </div>
-
             </div>
-
         </aside>
 
-
-        <!-- ========================= -->
-        <!-- MAIN CONTENT -->
-        <!-- ========================= -->
-
+        <!-- Main Content -->
         <main class="main-board">
-
-
-            <!-- TOP BAR -->
-
-            <div class="top-bar">
-
-                <p>
-                    DEV ARCHIVE / AMISHI.LOG
-                </p>
-                <button class="terminal-btn">
-                    open terminal
-                </button>
-                <button class="mood-toggle">
-                    ☁ rainy day
-                </button>
-
-            </div>
-
-
-            <!-- HERO -->
-
-            <section class="hero">
-
-                <div class="hero-left">
-
-                    <p class="small-label">
-                        hey! i'm
+            <section id="archive-page" class="app-page active-page">
+                <!-- Top Bar -->
+                <div class="top-bar">
+                    <div class="wip-banner">
+                        <em> 🚧 archive currently under construction</em>
+                    </div>
+                    <br>
+                    <p>
+                        DEV ARCHIVE / AMISHI.LOG
                     </p>
+                    <button class="terminal-btn">
+                        open terminal
+                    </button>
+                    <button class="mood-toggle">
+                        ☁ rainy day
+                    </button>
+                </div>
 
-                    <h1>
-                        amishi<span>.</span>
-                    </h1>
+                <!-- Hero -->
+                <section class="hero">
+                    <div class="hero-left">
+                        <p class="small-label">
+                            hey! i'm
+                        </p>
 
-                    <p class="hero-text">
+                        <h1>
+                            amishi<span>.</span>
+                        </h1>
 
-                        building, breaking,
-                        learning every single day.
+                        <p class="hero-text">
+                            building, breaking,
+                            learning every single day.
+                        </p>
 
-                    </p>
-                    <section class="sticky-area">
+                        <section class="sticky-area">
+                            <!-- Note 1 - Current Obsessions -->
+                            <div class="sticky-note note-yellow">
+                                <p>
+                                    Current Obsessions:<br>
+                                    - Backend Development<br>
+                                    - Product strategy<br>
+                                    - Interaction design<br>
+                                    - Technical storytelling<br>
+                                    - User psychology<br>
+                                </p>
+                            </div>
+
+                            <!-- Note 2 - Active Missions -->
+                            <div class="sticky-note note-pink">
+                                <p>
+                                    Active Missions:<br>
+                                    - Placement role<br>
+                                    - Build interactive portfolio<br>
+                                    - Ship personal projects<br>
+                                    - Improve frontend architecture<br>
+                                </p>
+                            </div>
 
 
-                        <!-- NOTE 1 -->
+                        </section>
 
-                        <div class="sticky-note note-yellow">
+                        <!-- Action Buttons -->
+                        <div class="hero-actions">
+                            <!-- Resume -->
+                            <a href="assets/resume.pdf" target="_blank" class="archive-action">
+                                <span>
+                                    ⬇
+                                </span>
+                                export resume
+                            </a>
+
+                            <!-- Contact -->
+                            <button class="archive-action contact-btn">
+                                <span>
+                                    ✦
+                                </span>
+                                initiate contact
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- XP Card -->
+                    <div class="xp-card">
+                        <p>XP</p>
+                        <h2 id="xp-count">1,250</h2>
+                        <div class="streak">
+                            🔥 7 day streak
+                        </div>
+                    </div>
+
+                </section>
+                <section class="archive-search">
+                    <input type="text" id="archive-search-input" placeholder="search the archive...">
+                    <div class="search-results"></div>
+                </section>
+                <!-- ========================= -->
+                <!-- STICKY NOTES -->
+                <!-- ========================= -->
+
+
+                <!-- ========================= -->
+                <!-- SKILL TREE -->
+                <!-- ========================= -->
+                <section class="skill-tree-section">
+
+                    <div class="section-heading">
+                        <p class="tree-label">
+                            progression map
+                        </p>
+
+                        <h2>
+                            Product Path
+                        </h2>
+
+                    </div>
+
+
+                    <!-- TREE -->
+
+                    <div class="skill-tree">
+
+
+                        <!-- NODE -->
+
+                        <div class="skill-node unlocked">
+
+                            <div class="node-circle">
+                                🌱
+                            </div>
+
+                            <h3>
+                                Research
+                            </h3>
 
                             <p>
-                                Current Obsessions:<br>
-                                - Backend Development<br>
-                                - Product strategy<br>
-                                - Interaction design<br>
-                                - Technical storytelling<br>
-                                - User psychology<br>
+                                unlocked
                             </p>
 
                         </div>
 
 
-                        <!-- NOTE 2 -->
+                        <!-- CONNECTOR -->
 
-                        <div class="sticky-note note-pink">
+                        <div class="connector"></div>
+
+
+                        <!-- NODE -->
+
+                        <div class="skill-node unlocked">
+
+                            <div class="node-circle">
+                                🎨
+                            </div>
+
+                            <h3>
+                                Roadmapping
+                            </h3>
 
                             <p>
-
-                                Active Missions:<br>
-                                - Placement role<br>
-                                - Build interactive portfolio<br>
-                                - Ship personal projects<br>
-                                - Improve frontend architecture<br>
+                                unlocked
                             </p>
 
                         </div>
 
 
-                    </section>
-                    <!-- ACTION BUTTONS -->
+                        <!-- CONNECTOR -->
 
-                    <div class="hero-actions">
-
-                        <!-- RESUME -->
-
-                        <a href="assets/resume.pdf" target="_blank" class="archive-action">
-
-                            <span>
-                                ⬇
-                            </span>
-
-                            export resume
-
-                        </a>
+                        <div class="connector"></div>
 
 
-                        <!-- CONTACT -->
+                        <!-- NODE -->
 
-                        <button class="archive-action contact-btn">
+                        <div class="skill-node active">
 
-                            <span>
-                                ✦
-                            </span>
+                            <div class="node-circle">
+                                ⚡
+                            </div>
 
-                            initiate contact
+                            <h3>
+                                User Analysis
+                            </h3>
 
-                        </button>
+                            <p>
+                                unlocked
+                            </p>
 
-                    </div>
-
-                </div>
-
-
-                <!-- XP CARD -->
-
-                <div class="xp-card">
-
-                    <p>XP</p>
-
-                    <h2 id="xp-count">1,250</h2>
-
-                    <div class="streak">
-
-                        🔥 7 day streak
-
-                    </div>
-
-                </div>
-
-            </section>
-            <!-- ========================= -->
-            <!-- ARCHIVE SEARCH -->
-            <!-- ========================= -->
-
-            <section class="archive-search">
-
-                <input type="text" id="archive-search-input" placeholder="search the archive...">
-
-                <div class="search-results">
-
-                </div>
-
-            </section>
-            <!-- ========================= -->
-            <!-- STICKY NOTES -->
-            <!-- ========================= -->
-
-
-            <!-- ========================= -->
-            <!-- SKILL TREE -->
-            <!-- ========================= -->
-            <section class="skill-tree-section">
-
-                <div class="section-heading">
-                    <p class="tree-label">
-                        progression map
-                    </p>
-
-                    <h2>
-                        Product Path
-                    </h2>
-
-                </div>
-
-
-                <!-- TREE -->
-
-                <div class="skill-tree">
-
-
-                    <!-- NODE -->
-
-                    <div class="skill-node unlocked">
-
-                        <div class="node-circle">
-                            🌱
                         </div>
 
-                        <h3>
-                            Research
-                        </h3>
 
-                        <p>
-                            unlocked
-                        </p>
+                        <!-- CONNECTOR -->
+
+                        <div class="connector locked-line"></div>
+
+
+                        <!-- NODE -->
+
+                        <div class="skill-node locked">
+
+                            <div class="node-circle">
+                                🔒
+                            </div>
+
+                            <h3>
+                                Strategy
+                            </h3>
+
+                            <p>
+                                leveling up...
+                            </p>
+
+                        </div>
+                    </div>
+
+                </section>
+                <section class="skill-tree-section">
+
+                    <div class="section-heading">
+
+                        <h2>
+                            Engineering Path
+                        </h2>
 
                     </div>
 
 
-                    <!-- CONNECTOR -->
+                    <!-- TREE -->
 
-                    <div class="connector"></div>
+                    <div class="skill-tree">
 
 
-                    <!-- NODE -->
+                        <!-- NODE -->
 
-                    <div class="skill-node unlocked">
+                        <div class="skill-node unlocked">
 
-                        <div class="node-circle">
-                            🎨
+                            <div class="node-circle">
+                                🌱
+                            </div>
+
+                            <h3>
+                                HTML
+                            </h3>
+
+                            <p>
+                                unlocked
+                            </p>
+
                         </div>
 
-                        <h3>
-                            Roadmapping
-                        </h3>
 
-                        <p>
-                            unlocked
-                        </p>
+                        <!-- CONNECTOR -->
 
-                    </div>
+                        <div class="connector"></div>
 
 
-                    <!-- CONNECTOR -->
+                        <!-- NODE -->
 
-                    <div class="connector"></div>
+                        <div class="skill-node unlocked">
 
+                            <div class="node-circle">
+                                🎨
+                            </div>
 
-                    <!-- NODE -->
+                            <h3>
+                                CSS
+                            </h3>
 
-                    <div class="skill-node active">
+                            <p>
+                                unlocked
+                            </p>
 
-                        <div class="node-circle">
-                            ⚡
                         </div>
 
-                        <h3>
-                            User Analysis
-                        </h3>
 
-                        <p>
-                            unlocked
-                        </p>
+                        <!-- CONNECTOR -->
 
-                    </div>
+                        <div class="connector"></div>
 
 
-                    <!-- CONNECTOR -->
+                        <!-- NODE -->
 
-                    <div class="connector locked-line"></div>
+                        <div class="skill-node active">
 
+                            <div class="node-circle">
+                                ⚡
+                            </div>
 
-                    <!-- NODE -->
+                            <h3>
+                                JavaScript
+                            </h3>
 
-                    <div class="skill-node locked">
+                            <p>
+                                leveling up...
+                            </p>
 
-                        <div class="node-circle">
-                            🔒
                         </div>
 
-                        <h3>
-                            Strategy
-                        </h3>
 
-                        <p>
-                            leveling up...
-                        </p>
+                        <!-- CONNECTOR -->
 
-                    </div>
-
-            </section>
-            <section class="skill-tree-section">
-
-                <div class="section-heading">
-
-                    <h2>
-                        Engineering Path
-                    </h2>
-
-                </div>
+                        <div class="connector locked-line"></div>
 
 
-                <!-- TREE -->
+                        <!-- NODE -->
 
-                <div class="skill-tree">
+                        <div class="skill-node locked">
 
+                            <div class="node-circle">
+                                🔒
+                            </div>
 
-                    <!-- NODE -->
+                            <h3>
+                                React
+                            </h3>
 
-                    <div class="skill-node unlocked">
+                            <p>
+                                locked
+                            </p>
 
-                        <div class="node-circle">
-                            🌱
+                        </div>
+                        <div class="connector locked-line"></div>
+                        <div class="skill-node locked">
+
+                            <div class="node-circle">
+                                🔒
+                            </div>
+
+                            <h3>
+                                Backend
+                            </h3>
+
+                            <p>
+                                locked
+                            </p>
+
                         </div>
 
-                        <h3>
-                            HTML
-                        </h3>
+                </section>
 
-                        <p>
-                            unlocked
-                        </p>
+                <!-- ========================= -->
+                <!-- FOLDER GRID -->
+                <!-- ========================= -->
 
-                    </div>
+                <section class="folder-grid">
 
 
-                    <!-- CONNECTOR -->
+                    <!-- FOLDER -->
 
-                    <div class="connector"></div>
-
-
-                    <!-- NODE -->
-
-                    <div class="skill-node unlocked">
-
-                        <div class="node-circle">
-                            🎨
-                        </div>
-
-                        <h3>
-                            CSS
-                        </h3>
-
-                        <p>
-                            unlocked
-                        </p>
-
-                    </div>
-
-
-                    <!-- CONNECTOR -->
-
-                    <div class="connector"></div>
-
-
-                    <!-- NODE -->
-
-                    <div class="skill-node active">
-
-                        <div class="node-circle">
-                            ⚡
-                        </div>
-
-                        <h3>
-                            JavaScript
-                        </h3>
-
-                        <p>
-                            leveling up...
-                        </p>
-
-                    </div>
-
-
-                    <!-- CONNECTOR -->
-
-                    <div class="connector locked-line"></div>
-
-
-                    <!-- NODE -->
-
-                    <div class="skill-node locked">
-
-                        <div class="node-circle">
-                            🔒
-                        </div>
-
-                        <h3>
-                            React
-                        </h3>
-
-                        <p>
-                            locked
-                        </p>
-
-                    </div>
-                    <div class="connector locked-line"></div>
-                    <div class="skill-node locked">
-
-                        <div class="node-circle">
-                            🔒
-                        </div>
-
-                        <h3>
-                            Backend
-                        </h3>
-
-                        <p>
-                            locked
-                        </p>
-
-                    </div>
-
-            </section>
-
-            <!-- ========================= -->
-            <!-- FOLDER GRID -->
-            <!-- ========================= -->
-
-            <section class="folder-grid">
-
-
-                <!-- FOLDER -->
-
-                <div class="folder-card" data-title="Work Experience" data-content="
+                    <div class="folder-card" data-title="Work Experience" data-content="
 <div class='quest-card'>
 
   <span class='quest-tag'>
@@ -561,7 +496,7 @@
     <i>Ohana Academy(Remote)</i>
   </h4>
   <p>
-    Managed content, designed live class timetables, moderated classes, and liasioned between tutors and the platform.
+    Managed content, designed live class timetables, moderated classes, and liaised between tutors and the platform.
 </p>
 
 </div>
@@ -578,14 +513,14 @@
     <i>MentoMeet (Remote)</i>
   </h4>
   <p>
-    Led operations and day-to-day execution, conducted cross-functional team meetings, and served as a JEE mentos.
+    Led operations and day-to-day execution, conducted cross-functional team meetings, and served as a JEE mentor.
 </p>
 
 </div>
 <div class='quest-card'>
 
   <span class='quest-tag'>
-    Part-time huslte as
+    Part-time hustle as
   </span>
 
   <h3>
@@ -636,28 +571,28 @@ into accessible documentation.
 </div>
 ">
 
-                    <div class="folder-paper"></div>
+                        <div class="folder-paper"></div>
 
-                    <img src="assets/icons/star.png" class="sticker">
+                        <img src="assets/icons/star.png" class="sticker">
 
-                    <div class="folder-tab green-tab">
-                        01
+                        <div class="folder-tab green-tab">
+                            01
+                        </div>
+
+                        <h3>
+                            PROFESSIONAL ARC
+                        </h3>
+
+                        <p>
+                            <i>places i've worked and learned</i>
+                        </p>
+
                     </div>
 
-                    <h3>
-                        PROFESSIONAL ARC
-                    </h3>
 
-                    <p>
-                        <i>places i've worked and learned</i>
-                    </p>
+                    <!-- FOLDER -->
 
-                </div>
-
-
-                <!-- FOLDER -->
-
-                <div class="folder-card" data-title="Projects" data-content="<div class='quest-card'>
+                    <div class="folder-card" data-title="Projects" data-content="<div class='quest-card'>
 
   <span class='quest-tag'>
      MBA Integrated Consultancy Project (ICP)
@@ -723,26 +658,26 @@ innovation and proposed evidence-based recommendations.</p>
     Designed and developed a Python-based integration to automatically convert GitLab issues into corresponding Notion tasks.</p>
 </div>
 ">
-                    <div class="folder-paper"></div>
+                        <div class="folder-paper"></div>
 
-                    <div class="folder-tab purple-tab">
-                        02
+                        <div class="folder-tab purple-tab">
+                            02
+                        </div>
+
+                        <h3>
+                            PROJECT LOGS
+                        </h3>
+
+                        <p>
+                            <i>things i've built from scratch</i>
+                        </p>
+
                     </div>
 
-                    <h3>
-                        PROJECT LOGS
-                    </h3>
 
-                    <p>
-                        <i>things i've built from scratch</i>
-                    </p>
+                    <!-- FOLDER -->
 
-                </div>
-
-
-                <!-- FOLDER -->
-
-                <div class="folder-card" data-title="Education" data-content="<div class='quest-card'>
+                    <div class="folder-card" data-title="Education" data-content="<div class='quest-card'>
 
   <span class='quest-tag'>
      Sheffield Hallam University, Sheffield
@@ -798,26 +733,26 @@ Systems, Computer Networks, Computer Graphics<br><br>
 Member, Rhythmeecz (Dance Club)</p>
 </div>
 ">
-                    <div class="folder-paper"></div>
+                        <div class="folder-paper"></div>
 
-                    <div class="folder-tab pink-tab">
-                        03
+                        <div class="folder-tab pink-tab">
+                            03
+                        </div>
+
+                        <h3>
+                            ACADEMIC FILES
+                        </h3>
+
+                        <p>
+                            <i>degrees, coursework, and growth</i>
+                        </p>
+
                     </div>
 
-                    <h3>
-                        ACADEMIC FILES
-                    </h3>
 
-                    <p>
-                        <i>degrees, coursework, and growth</i>
-                    </p>
+                    <!-- FOLDER -->
 
-                </div>
-
-
-                <!-- FOLDER -->
-
-                <div class="folder-card" data-title="Leadership and Activities" data-content="<div class='quest-card'>
+                    <div class="folder-card" data-title="Leadership and Activities" data-content="<div class='quest-card'>
 
   <span class='quest-tag'>
      Runner-Up
@@ -923,22 +858,22 @@ responsibility.
 </div>
 ">
 
-                    <div class="folder-paper"></div>
-                    <div class="folder-tab peach-tab">
-                        04
+                        <div class="folder-paper"></div>
+                        <div class="folder-tab peach-tab">
+                            04
+                        </div>
+
+                        <h3>
+                            SIDE QUESTS
+                        </h3>
+
+                        <p>
+                            <i>teamwork outside the classroom</i>
+                        </p>
+
                     </div>
 
-                    <h3>
-                        SIDE QUESTS
-                    </h3>
-
-                    <p>
-                        <i>teamwork outside the classroom</i>
-                    </p>
-
-                </div>
-
-                <div class="folder-card" data-title="Honors and Awards" data-content="<div class='quest-card'>
+                    <div class="folder-card" data-title="Honors and Awards" data-content="<div class='quest-card'>
 
   <span class='quest-tag'>
      Winner
@@ -1060,21 +995,21 @@ Bronze, Silver and Gold Award.
 </div>
 ">
 
-                    <div class="folder-paper"></div>
-                    <div class="folder-tab pink-tab">
-                        05
+                        <div class="folder-paper"></div>
+                        <div class="folder-tab pink-tab">
+                            05
+                        </div>
+
+                        <h3>
+                            ACHIEVEMENTS UNLOCKED
+                        </h3>
+
+                        <p>
+                            <i>wins worth remembering</i>
+                        </p>
+
                     </div>
-
-                    <h3>
-                        ACHIEVEMENTS UNLOCKED
-                    </h3>
-
-                    <p>
-                        <i>wins worth remembering</i>
-                    </p>
-
-                </div>
-                <div class="folder-card" data-title="Licenses and Certifications" data-content="<div class='quest-card'>
+                    <div class="folder-card" data-title="Licenses and Certifications" data-content="<div class='quest-card'>
 
   <span class='quest-tag'>
      Bloomberg
@@ -1122,21 +1057,21 @@ Bronze, Silver and Gold Award.
 </div>
   ">
 
-                    <div class="folder-paper"></div>
-                    <div class="folder-tab green-tab">
-                        06
+                        <div class="folder-paper"></div>
+                        <div class="folder-tab green-tab">
+                            06
+                        </div>
+
+                        <h3>
+                            CREDENTIAL VAULT
+                        </h3>
+
+                        <p>
+                            <i>learning beyond the classroom</i>
+                        </p>
+
                     </div>
-
-                    <h3>
-                        CREDENTIAL VAULT
-                    </h3>
-
-                    <p>
-                        <i>learning beyond the classroom</i>
-                    </p>
-
-                </div>
-                <div class="folder-card" data-title="Licenses and Certifications" data-content="<div class='quest-card'>
+                    <div class="folder-card" data-title="Licenses and Certifications" data-content="<div class='quest-card'>
 
   <span class='quest-tag'>
      Springer Link
@@ -1147,21 +1082,21 @@ Bronze, Silver and Gold Award.
 </div>
 ">
 
-                    <div class="folder-paper"></div>
-                    <div class="folder-tab yellow-tab">
-                        07
+                        <div class="folder-paper"></div>
+                        <div class="folder-tab yellow-tab">
+                            07
+                        </div>
+
+                        <h3>
+                            RESEARCH ARCHIVE
+                        </h3>
+
+                        <p>
+                            <i>ideas explored in depth</i>
+                        </p>
+
                     </div>
-
-                    <h3>
-                        RESEARCH ARCHIVE
-                    </h3>
-
-                    <p>
-                        <i>ideas explored in depth</i>
-                    </p>
-
-                </div>
-                <div class="folder-card" data-title="Skills and Interests" data-content="<div class='quest-card'>
+                    <div class="folder-card" data-title="Skills and Interests" data-content="<div class='quest-card'>
 
   <span class='quest-tag'>
      Proficiency
@@ -1245,32 +1180,34 @@ social impact initiatives</h4>
 </div>
 ">
 
-                    <div class="folder-paper"></div>
-                    <div class="folder-tab blue-tab">
-                        08
+                        <div class="folder-paper"></div>
+                        <div class="folder-tab blue-tab">
+                            08
+                        </div>
+
+                        <h3>
+                            CORE ATTRIBUTES
+                        </h3>
+
+                        <p>
+                            <i>things that i'm good at</i>
+                        </p>
+
                     </div>
-
-                    <h3>
-                        CORE ATTRIBUTES
-                    </h3>
-
-                    <p>
-                        <i>things that i'm good at</i>
-                    </p>
-
-                </div>
-            </section>
-            <!-- ========================= -->
-            <!-- SECRET FILE -->
-            <!-- ========================= -->
-
-            <div class="secret-file">
+                </section>
+           <div class="secret-file">
 
                 <p>
                     confidential.zip
                 </p>
 
             </div>
+            </section>
+            <!-- ========================= -->
+            <!-- SECRET FILE -->
+            <!-- ========================= -->
+
+ 
             <!-- ========================= -->
             <!-- ARCHIVE MODAL -->
             <!-- ========================= -->
@@ -1279,7 +1216,7 @@ social impact initiatives</h4>
 
                 <div class="modal-content">
 
-                    <button class="close-modal">
+                    <button class="close-modal" aria-label="Close modal">
                         ×
                     </button>
 
